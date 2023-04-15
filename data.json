@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "category": "Men Clothing",
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "image": "https://images.unsplash.com/photo-1528921581519-52b9d779df2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80",
+    "rating": {
+      "count": 120,
+      "rate": 3.9
+    }
+  },
+  {
+    "id": 2,
+    "title": "Mens Casual Premium Slim Fit T-Shirts",
+    "price": 22.3,
+    "category": "Men Clothing",
+    "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched s",
+    "image": "https://images.unsplash.com/photo-1554568218-9a456cea00cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "rating": {
+      "count": 259,
+      "rate": 4.1
+    }
+  },
+  {
+    "id": 3,
+    "title": "Mens Cotton Jacket",
+    "price": 55.9,
+    "category": "Men Clothing",
+    "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other",
+    "image": "https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+    "rating": {
+      "count": 500,
+      "rate": 4.7
+    }
+  },
+  {
+    "id": 4,
+    "title": "Mens track top and trouser",
+    "price": 15.99,
+    "category": "Men Clothing",
+    "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be in England measurements",
+    "image": "https://images.unsplash.com/photo-1541102396743-74c128e1133e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=385&q=80",
+    "rating": {
+      "count": 430,
+      "rate": 2.1
+    }
+  },
+  {
+    "id": 5,
+    "title": "Naga Gold Chain Bracelet",
+    "price": 395,
+    "category": "jewelery",
+    "description": "From our Legends Collection, the Naga was inspired by the mythical water Naga protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance",
+    "image": "https://plus.unsplash.com/premium_photo-1671641737531-8959f76d4a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80",
+    "rating": {
+      "count": 400,
+      "rate": 4.6
+    }
+  },
+  {
+    "id": 6,
+    "title": "Diamond Necklace",
+    "price": 168,
+    "category": "jewelery",
+    "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange",
+    "image": "https://images.unsplash.com/photo-1589128784765-a69d61ed9c39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "rating": {
+      "count": 10,
+      "rate": 4.5
+    }
+  },
+  {
+    "id": 7,
+    "title": "Diamond and Silver Plated Princess",
+    "price": 999,
+    "category": "jewelery",
+    "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange",
+    "image": "https://images.unsplash.com/photo-1588445046108-14dced0c98fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+    "rating": {
+      "count": 5,
+      "rate": 4.8
+    }
+  },
+  {
+    "id": 8,
+    "title": "Pierced Owl Rose Silver Plated Stainless Steel Double",
+    "price": 30.99,
+    "category": "jewelery",
+    "description": "Rose Silver Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+    "image": "https://images.unsplash.com/photo-1634390618228-2fe329fc7546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+    "rating": {
+      "count": 20,
+      "rate": 3.8
+    }
+  },
+  {
+    "id": 9,
+    "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0",
+    "price": 64,
+    "category": "electronics",
+    "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7;",
+    "image": "https://images.unsplash.com/photo-1624895608078-e9f564cbe3fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+    "rating": {
+      "count": 203,
+      "rate": 3.5
+    }
+  },
+  {
+    "id": 10,
+    "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+    "price": 109,
+    "category": "electronics",
+    "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications;",
+    "image": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+    "rating": {
+      "count": 270,
+      "rate": 3.9
+    }
+  },
+  {
+    "id": 10,
+    "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+    "price": 109,
+    "category": "electronics",
+    "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications;",
+    "image": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+    "rating": {
+      "count": 319,
+      "rate": 4.8
+    }
+  }
+]

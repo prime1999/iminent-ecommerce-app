@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html body{
+    background-color: rgb(249, 249, 249);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+html body Link, 
+li, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p,
+a,
+button{
+    transition: .5s ease-in-out
+}
+
+hr{
+    border-color: rgb(177, 173, 173);
+}
+
+.logo span{
+    letter-spacing: 0.8rem;
+}
+
+.discountItems{
+    border-radius: 100%;
+    
+}
+
+.sizes label{
+    margin: 0 10px;
+    padding: 10px 12px;
+    border: 2px solid orange;
+    width: 300px;
+    border-radius: 10%;
+    color: orange;
+    transition: .5s ease-in-out;
+    font-size: 15px;
+}
+
+.sizes label:hover{
+   background-color: orange;
+   border-color: #fff;
+   color: #fff;
+   cursor: pointer;
+}
+
+.sizes input:checked +  label{
+    background-color: orange;
+    border-color: #fff;
+    color: #fff;
+}
+
+.sizes input{
+    display: none;
+}
+
+footer{
+    position: absolute;
+    bottom: -10;
+    height: 400px;
+   
+}
