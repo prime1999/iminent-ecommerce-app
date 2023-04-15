@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { auth, db } from "../firebase.config";
+import CartContext from "../Context/CartContext";
 
 const Cart = () => {
-  const [cart, setCart] = useState(null);
+  //const [cart, setCart] = useState(null);
+  const { cart, dispatch } = useContext(CartContext);
 
   useEffect(() => {
     const getCart = async () => {
@@ -18,7 +20,7 @@ const Cart = () => {
             data: doc.data(),
           });
         });
-        setCart(cart);
+        dispatch({ type: "GET_CART", payload: cart });
       } catch (error) {
         console.log(error);
       }

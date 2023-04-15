@@ -31,17 +31,6 @@ export const MainProvider = ({ children }) => {
     };
     fetchRecentlyViewed();
   }, []);
-
-  // useEffect(() => {
-  //   const test = async () => {
-  //     const { data } = await axios("https://fakestoreapi.com/carts");
-  //     console.log(data);
-  //   };
-  //   test();
-  // });
-
-  console.log(state.products);
-
   return (
     <Maincontext.Provider
       value={{

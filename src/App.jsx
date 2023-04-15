@@ -16,6 +16,7 @@ import ForgotPassword from "./Pages/ForgoPassword";
 import { MainProvider } from "./Context/MainContext";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { TimeProvider } from "./Context/TimeContext";
+import { CartProvider } from "./Context/CartContext";
 import ProductDetails from "./Pages/ProductDetails";
 import PrivateRoute from "./Components/PrivateRoute";
 import Cart from "./Pages/Cart";
@@ -50,7 +51,9 @@ function App() {
       <ThemeProvider theme={theme}>
         <MainProvider>
           <TimeProvider>
-            <RouterProvider router={router} />
+            <CartProvider>
+              <RouterProvider router={router} />
+            </CartProvider>
           </TimeProvider>
         </MainProvider>
       </ThemeProvider>

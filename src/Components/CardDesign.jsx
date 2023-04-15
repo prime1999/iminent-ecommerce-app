@@ -2,12 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import Rating from "@mui/material/Rating";
 import { Link, useNavigate } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
-import {
-  ref,
-  getStorage,
-  uploadBytesResumable,
-  getDownloadURL,
-} from "firebase/storage";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { auth, db } from "../firebase.config";
 import { toast } from "react-toastify";
