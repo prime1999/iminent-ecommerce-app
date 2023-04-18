@@ -1,16 +1,10 @@
 import React from "react";
-//import { Grid, GridItem } from "@chakra-ui/react";
 import Grid from "@mui/material/Grid";
 import SideBar from "./SideBar";
 import Cards from "./Cards";
 import ReactAutoSlider from "./ReactAutoSlider";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-// const useStyles = makeStyles({
-//   grid: {
-//     display: "hidden",
-//   },
-// });
 const ProductsSection = () => {
   const isSmallerThanMd = useMediaQuery((theme) =>
     theme.breakpoints.down("md")

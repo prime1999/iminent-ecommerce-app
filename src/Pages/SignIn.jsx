@@ -27,14 +27,14 @@ const SignIn = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-
+    //Sign user in with their email and password
     try {
       const usercredentials = await signInWithEmailAndPassword(
         auth,
         email,
         password
       );
-
+      //if the user has been signed in navigate them to the explore page
       if (usercredentials.user) {
         navigate("/");
         toast.success("User logged in");

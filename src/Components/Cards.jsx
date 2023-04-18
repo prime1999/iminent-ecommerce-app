@@ -1,12 +1,13 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Maincontext from "../Context/MainContext";
 import CardDesign from "./CardDesign";
+import Loader from "./Loader";
 
 const Cards = () => {
   const { products, loading } = useContext(Maincontext);
 
   if (loading) {
-    return <h2>Loading...</h2>;
+    return <Loader />;
   }
 
   return (

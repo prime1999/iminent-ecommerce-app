@@ -15,6 +15,7 @@ const SignUp = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    //Send password reset link to their email and then redirect them to the sign-in page
     try {
       await sendPasswordResetEmail(auth, email);
       navigate("/sign-in");

@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Avatar from "@mui/material/Avatar";
+import Badge from "@mui/material/Badge";
+import { styled } from "@mui/material/styles";
+import IconButton from "@mui/material/IconButton";
 import { RxMagnifyingGlass } from "react-icons/rx";
 import {
   RiArrowDownSFill,
@@ -13,8 +16,10 @@ import { AiOutlineLogout } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebase.config";
 import { toast } from "react-toastify";
+import CartContext from "../Context/CartContext";
 
 const Navbar = () => {
+  const { cart } = useContext(CartContext);
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -23,6 +28,18 @@ const Navbar = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const cartItems = cart.length;
+
+  //Cart icon badge
+  const StyledBadge = styled(Badge)(({ theme }) => ({
+    "& .MuiBadge-badge": {
+      right: 3,
+      top: 0,
+      border: `2px solid ${theme.palette.background.paper}`,
+      padding: "0 4px",
+    },
+  }));
 
   const navigate = useNavigate();
 
@@ -112,7 +129,13 @@ const Navbar = () => {
               to="cart"
               className="flex items-center font-poppins font-semibold hover:text-orange"
             >
-              <RiShoppingCart2Fill className="text-orange text-3xl" />
+              <IconButton>
+                <StyledBadge
+                  badgeContent={cartItems}
+                  color="primary"
+                ></StyledBadge>
+                <RiShoppingCart2Fill className="text-orange text-3xl" />
+              </IconButton>
               <p className=" hover:-mt-2">Cart</p>
             </Link>
           </div>

@@ -23,7 +23,7 @@ const WideCard = () => {
           </div>
           <div className="mx-auto">
             <button className="p-2 bg-orange px-6 font-poppins rounded-lg hover:bg-white hover:text-orange">
-              Buy Latte
+              Order Now
             </button>
           </div>
         </div>

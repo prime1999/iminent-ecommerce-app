@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, createContext, useReducer } from "react";
 import { MainReducer } from "../Components/Reducers/MainReducer";
+import { auth } from "../firebase.config";
 
 const Maincontext = createContext();
 
@@ -8,6 +9,7 @@ export const MainProvider = ({ children }) => {
   const initialState = {
     products: [],
     viewed: [],
+    categories: [],
     data: {},
     shareLinkCopied: false,
     loading: true,
@@ -16,7 +18,6 @@ export const MainProvider = ({ children }) => {
   const [state, dispatch] = useReducer(MainReducer, initialState);
 
   useEffect(() => {
-    // setLoading(true);
     const fetchProducts = async () => {
       const { data } = await axios("https://fakestoreapi.com/products");
       dispatch({ type: "GET_PRODUCTS", payload: data });

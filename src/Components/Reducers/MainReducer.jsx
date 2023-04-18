@@ -12,11 +12,28 @@ export const MainReducer = (state, action) => {
         viewed: action.payload,
         loading: false,
       };
+    case "GET_CATEGORIES":
+      return {
+        ...state,
+        categories: action.payload,
+        loading: false,
+      };
     case "GET_DATA":
       return {
         ...state,
         data: action.payload,
         loading: false,
+      };
+    case "SET_DATA":
+      return {
+        ...state,
+        data: { ...state.data, userRef: action.payload },
+        loading: false,
+      };
+    case "GET_PRODUCT":
+      return {
+        ...state,
+        product: action.payload,
       };
     case "SET_LINK":
       return {

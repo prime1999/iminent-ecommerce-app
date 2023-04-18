@@ -5,17 +5,19 @@ const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const initialState = {
-    cart: null,
+    cart: [],
     product: {},
+    loading: true,
     count: 1,
+    exist: false,
   };
 
-  const [state, dispatch] = useReducer(CartReducer, initialState);
+  const [state, cartDispatch] = useReducer(CartReducer, initialState);
   return (
     <CartContext.Provider
       value={{
         ...state,
-        dispatch,
+        cartDispatch,
       }}
     >
       {children}
