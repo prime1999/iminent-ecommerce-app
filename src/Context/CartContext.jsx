@@ -8,6 +8,7 @@ export const CartProvider = ({ children }) => {
     cart: [],
     product: {},
     loading: true,
+    totalPrice: 0,
     count: 1,
     exist: false,
   };

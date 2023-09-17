@@ -7,7 +7,12 @@ import { BsTrash3 } from "react-icons/bs";
 import {} from "firebase/firestore";
 import CartContext from "../Context/CartContext";
 
-const CartDesign = ({ cart, handleDelete }) => {
+const CartDesign = ({
+  cart,
+  handleDecrement,
+  handleIncrement,
+  handleDelete,
+}) => {
   const { count } = useContext(CartContext);
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
@@ -46,12 +51,18 @@ const CartDesign = ({ cart, handleDelete }) => {
           <div className="flex items-center font-lato bg-slate-100 p-2 rounded-2xl">
             <button
               className="text-2xl font-bold"
-              onClick={() => console.log(cart.id)}
+              disabled={cart?.data?.quantity <= 1 ? true : false}
+              onClick={() => handleDecrement(cart.id)}
             >
               -
             </button>
-            <h6 className="mx-6 font-bold">{count}</h6>
-            <button className="text-xl font-bold">+</button>
+            <h6 className="mx-6 font-bold">{cart?.data?.quantity}</h6>
+            <button
+              onClick={() => handleIncrement(cart.id)}
+              className="text-xl font-bold"
+            >
+              +
+            </button>
           </div>
           <div className="font-lato font-bold">
             <button onClick={handleOpen} className="bg-red-500 px-2 text-white">

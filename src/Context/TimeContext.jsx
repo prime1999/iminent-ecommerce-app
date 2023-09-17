@@ -6,7 +6,7 @@ const TimeContext = createContext();
 export const TimeProvider = ({ children }) => {
   const initialState = {
     countDown: "",
-    endDate: new Date("April 20, 2023, 11:59:59").getTime(),
+    endDate: new Date("April 29, 2023, 11:59:59").getTime(),
   };
   const [state, dispatch] = useReducer(TimeReducer, initialState);
 

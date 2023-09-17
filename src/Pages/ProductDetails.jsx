@@ -125,6 +125,9 @@ const ProductDetails = () => {
           } else {
             cartDispatch({ type: "CHECK_CART", payload: true });
           }
+        } else {
+          navigate("/sign-in");
+          toast.info("Please sign in to get a cart");
         }
       });
     } catch (error) {
@@ -194,13 +197,14 @@ const ProductDetails = () => {
                 wishlist
               </button>
               {exist ? (
-                <button
+                <Link
+                  to="/cart"
                   onClick={removeProduct}
-                  className="flex justify-center items-center rounded-md w-1/2 bg-red-500 px-4 py-2 ml-8 text-white text-center hover:drop-shadow-lg"
+                  className="flex justify-center items-center rounded-md w-1/2 bg-orange px-4 py-2 ml-8 text-white text-center hover:drop-shadow-lg"
                 >
                   <BiCartDownload className="text-3xl mr-2" />
-                  <p className="text-md">Remove product from cart</p>
-                </button>
+                  <p className="text-md">Product Added to cart</p>
+                </Link>
               ) : (
                 <button
                   onClick={addProductToCart}

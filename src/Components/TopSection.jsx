@@ -65,12 +65,6 @@ const TopSection = () => {
                     ""
                   )}
                   <div className="w-full flex justify-between top-2/4 sliderFlex"></div>
-                  {/* <button onClick={() => slider?.current?.slickPrev()}>
-                    <FaArrowLeft />
-                  </button>
-                  <button onClick={() => slider?.current?.slickNext()}>
-                    <FaArrowRight />
-                  </button> */}
                 </div>
               </div>
             </div>

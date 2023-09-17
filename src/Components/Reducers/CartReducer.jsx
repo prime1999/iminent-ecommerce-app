@@ -12,15 +12,21 @@ export const CartReducer = (state, action) => {
         exist: action.payload,
         loading: false,
       };
+
+    case "TOTAL_PRICE":
+      return {
+        ...state,
+        totalPrice: action.payload,
+      };
     case "INCREMENT":
       return {
         ...state,
-        count: count++,
+        count: state.count++,
       };
     case "DECREMENT":
       return {
         ...state,
-        count: count--,
+        count: state.count--,
       };
   }
 };

@@ -6,6 +6,12 @@ export const MainReducer = (state, action) => {
         products: action.payload,
         loading: false,
       };
+    case "SET_CATEGORY":
+      return {
+        ...state,
+        category: [...state.category, action.payload],
+        loading: false,
+      };
     case "GET_VIEWED":
       return {
         ...state,

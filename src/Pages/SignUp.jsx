@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AiFillEye, AiFillEyeInvisible, AiOutlineGoogle } from "react-icons/ai";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { BiMailSend } from "react-icons/bi";
 import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";

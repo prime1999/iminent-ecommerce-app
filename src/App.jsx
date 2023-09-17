@@ -20,6 +20,8 @@ import { CartProvider } from "./Context/CartContext";
 import ProductDetails from "./Pages/ProductDetails";
 import PrivateRoute from "./Components/PrivateRoute";
 import Cart from "./Pages/Cart";
+import ComingSoon from "./Pages/ComingSoon";
+import Contact from "./Pages/Contact";
 
 function App() {
   const theme = createTheme();
@@ -39,10 +41,13 @@ function App() {
             path="/product-details/:productId"
             element={<ProductDetails />}
           />
+          <Route path="/contact" element={<Contact />} />
         </Route>
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/sign-in" element={<SignIn />} />
         <Route path="/sign-up" element={<SignUp />} />
+
+        <Route path="/coming-soon" element={<ComingSoon />} />
       </>
     )
   );
