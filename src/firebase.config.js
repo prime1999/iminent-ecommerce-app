@@ -5,7 +5,7 @@ import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
 	apiKey: "AIzaSyCGO0BlQQ8TmynxTYub98iFyi7dWCta_b0",
-	authDomain: "https://snazzy-cassata-fbd876.netlify.app",
+	authDomain: "iminent-ecommerce-app.firebaseapp.com",
 	projectId: "iminent-ecommerce-app",
 	storageBucket: "iminent-ecommerce-app.appspot.com",
 	messagingSenderId: "108755080712",
